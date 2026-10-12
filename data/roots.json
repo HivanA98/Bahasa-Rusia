@@ -1,0 +1,334 @@
+{
+  "module": 4,
+  "title": "Akar kata dan afiks",
+  "description": "Empat belas keluarga akar kata Rusia dan dua belas awalan serta akhiran pembentuk kata. Mengenali akar membuat kata baru bisa diterka, bukan dihafal satu per satu.",
+  "schema": {
+    "id": "pengenal unik (r## untuk keluarga, w## untuk afiks, r-q## untuk soal)",
+    "root": "akar kata tanpa tanda tekanan",
+    "variants": "bentuk akar yang berubah bunyinya, tanpa tanda tekanan",
+    "meaning": "makna inti akar",
+    "members": "kata turunan: ru (bertanda tekanan), gloss, pattern (afiks yang dipakai)",
+    "affix": "awalan atau akhiran, ditulis dengan tanda hubung",
+    "type": "awalan | akhiran",
+    "function": "fungsi afiks",
+    "examples": "contoh kata beserta akarnya",
+    "stage": "tahap 1-6",
+    "note": "catatan, termasuk penjelasan perubahan bunyi akar"
+  },
+  "catatan_penting": [
+    "Akar kata bahasa Rusia sering BERUBAH BUNYI ketika mendapat afiks: пис- menjadi пиш- (пишу́), друг- menjadi друж- dan друз- (дру́жба, друзья́), ход- menjadi хож- (хожу́). Perubahan ini teratur secara sejarah, tetapi bagi pemula lebih aman dihafal per kata.",
+    "Satu bentuk huruf yang sama bisa berasal dari dua akar yang berbeda. Contohnya вод- pada вода́ (air) dan вод- pada води́ть (mengemudikan) bukan akar yang sama. Proyek ini hanya memuat keluarga yang hubungannya jelas.",
+    "Mengenali akar membantu MENERKA arti kata baru, bukan memastikannya. Awalan sering menggeser makna cukup jauh: писа́ть (menulis), подписа́ть (menandatangani), описа́ть (menggambarkan)."
+  ],
+  "families": [
+    {
+      "id": "r01", "root": "работ", "variants": ["рабоч"], "meaning": "kerja", "stage": 2,
+      "members": [
+        {"ru": "рабо́та", "gloss": "pekerjaan, tempat kerja", "pattern": "-а"},
+        {"ru": "рабо́тать", "gloss": "bekerja", "pattern": "-ать"},
+        {"ru": "рабо́чий", "gloss": "buruh, pekerja", "pattern": "-ий"},
+        {"ru": "рабо́тник", "gloss": "pegawai, karyawan", "pattern": "-ник"}
+      ],
+      "note": "Akarnya hampir tidak berubah. Satu kekecualian: pada рабо́чий huruf т menjadi ч, sehingga akarnya рабоч-."
+    },
+    {
+      "id": "r02", "root": "говор", "variants": ["говар"], "meaning": "bicara", "stage": 3,
+      "members": [
+        {"ru": "говори́ть", "gloss": "berbicara", "pattern": "-ить"},
+        {"ru": "разгово́р", "gloss": "percakapan", "pattern": "раз- + -0"},
+        {"ru": "разгова́ривать", "gloss": "bercakap-cakap", "pattern": "раз- + -ивать"},
+        {"ru": "догово́р", "gloss": "perjanjian, kontrak", "pattern": "до- + -0"}
+      ],
+      "note": "Pada разгова́ривать huruf о kedua berubah menjadi а. Perubahan vokal akar semacam ini lazim pada bentuk berulang."
+    },
+    {
+      "id": "r03", "root": "пис", "variants": ["пиш"], "meaning": "tulis", "stage": 3,
+      "members": [
+        {"ru": "писа́ть", "gloss": "menulis", "pattern": "-ать"},
+        {"ru": "письмо́", "gloss": "surat", "pattern": "-мо"},
+        {"ru": "писа́тель", "gloss": "penulis, sastrawan", "pattern": "-тель"},
+        {"ru": "запи́ска", "gloss": "catatan kecil, memo", "pattern": "за- + -ка"},
+        {"ru": "по́дпись", "gloss": "tanda tangan", "pattern": "под- + -ь"}
+      ],
+      "note": "Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+    },
+    {
+      "id": "r04", "root": "чит", "variants": ["чт"], "meaning": "baca", "stage": 3,
+      "members": [
+        {"ru": "чита́ть", "gloss": "membaca", "pattern": "-ать"},
+        {"ru": "чита́тель", "gloss": "pembaca", "pattern": "-тель"},
+        {"ru": "прочита́ть", "gloss": "membaca habis", "pattern": "про- + -ать"},
+        {"ru": "чте́ние", "gloss": "bacaan, kegiatan membaca", "pattern": "-ение"}
+      ],
+      "note": "Pada чте́ние vokal и hilang sama sekali, sehingga akarnya tinggal чт-. Pola hilangnya vokal ini disebut vokal yang gugur."
+    },
+    {
+      "id": "r05", "root": "уч", "meaning": "ajar, belajar", "stage": 2,
+      "members": [
+        {"ru": "учи́ть", "gloss": "mengajar, menghafal", "pattern": "-ить"},
+        {"ru": "учи́ться", "gloss": "belajar, bersekolah", "pattern": "-иться"},
+        {"ru": "учи́тель", "gloss": "guru", "pattern": "-тель"},
+        {"ru": "учени́к", "gloss": "murid, pelajar", "pattern": "-еник"},
+        {"ru": "уче́бник", "gloss": "buku pelajaran", "pattern": "-ебник"}
+      ],
+      "note": "Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+    },
+    {
+      "id": "r06", "root": "ход", "variants": ["хож"], "meaning": "jalan, gerak", "stage": 4,
+      "members": [
+        {"ru": "ходи́ть", "gloss": "pergi berulang (jalan kaki)", "pattern": "-ить"},
+        {"ru": "вход", "gloss": "pintu masuk", "pattern": "в- + -0"},
+        {"ru": "вы́ход", "gloss": "pintu keluar", "pattern": "вы- + -0"},
+        {"ru": "перехо́д", "gloss": "penyeberangan, peralihan", "pattern": "пере- + -0"},
+        {"ru": "прохо́жий", "gloss": "orang yang lewat", "pattern": "про- + -ий"}
+      ],
+      "note": "Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́."
+    },
+    {
+      "id": "r07", "root": "дом", "meaning": "rumah", "stage": 2,
+      "members": [
+        {"ru": "дом", "gloss": "rumah, gedung", "pattern": "-0"},
+        {"ru": "до́ма", "gloss": "di rumah", "pattern": "-а (adverbia)"},
+        {"ru": "домо́й", "gloss": "pulang, ke rumah", "pattern": "-ой (adverbia)"},
+        {"ru": "дома́шний", "gloss": "rumahan, buatan rumah", "pattern": "-ашний"}
+      ],
+      "note": "Tiga bentuk yang mirip tetapi berbeda fungsi: дома́ (jamak, rumah-rumah), до́ма (di rumah), домо́й (ke rumah). Hanya tekanan dan akhiran yang membedakannya."
+    },
+    {
+      "id": "r08", "root": "друг", "variants": ["друж", "друз"], "meaning": "teman", "stage": 3,
+      "members": [
+        {"ru": "друг", "gloss": "teman (lelaki)", "pattern": "-0"},
+        {"ru": "подру́га", "gloss": "teman (perempuan)", "pattern": "по- + -а"},
+        {"ru": "дру́жба", "gloss": "persahabatan", "pattern": "-ба"},
+        {"ru": "дружи́ть", "gloss": "berteman", "pattern": "-ить"},
+        {"ru": "друзья́", "gloss": "teman-teman", "pattern": "-ья (jamak)"}
+      ],
+      "note": "Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+    },
+    {
+      "id": "r09", "root": "зна", "meaning": "tahu", "stage": 4,
+      "members": [
+        {"ru": "знать", "gloss": "tahu, mengetahui", "pattern": "-ть"},
+        {"ru": "зна́ние", "gloss": "pengetahuan", "pattern": "-ние"},
+        {"ru": "знако́мый", "gloss": "kenalan, yang dikenal", "pattern": "-комый"},
+        {"ru": "знако́мство", "gloss": "perkenalan", "pattern": "-комство"}
+      ],
+      "note": "Dari akar sependek ini lahir pula ungkapan perkenalan: Прия́тно познако́миться (senang berkenalan)."
+    },
+    {
+      "id": "r10", "root": "жи", "variants": ["жиз"], "meaning": "hidup", "stage": 4,
+      "members": [
+        {"ru": "жить", "gloss": "hidup, tinggal", "pattern": "-ть"},
+        {"ru": "жизнь", "gloss": "kehidupan", "pattern": "-знь"},
+        {"ru": "жи́тель", "gloss": "penduduk, penghuni", "pattern": "-тель"},
+        {"ru": "жило́й", "gloss": "hunian, tempat tinggal", "pattern": "-ой"}
+      ],
+      "note": "Sesudah ж, huruf и dilafalkan seperti ы: жить dibaca 'zhyt', жизнь dibaca 'zhyzn'."
+    },
+    {
+      "id": "r11", "root": "вид", "variants": ["виж"], "meaning": "lihat", "stage": 5,
+      "members": [
+        {"ru": "ви́деть", "gloss": "melihat", "pattern": "-еть"},
+        {"ru": "вид", "gloss": "pemandangan, jenis", "pattern": "-0"},
+        {"ru": "ви́дно", "gloss": "kelihatan, tampaknya", "pattern": "-но"},
+        {"ru": "уви́деть", "gloss": "melihat (sekali, tuntas)", "pattern": "у- + -еть"},
+        {"ru": "свида́ние", "gloss": "pertemuan, kencan", "pattern": "с- + -ание"}
+      ],
+      "note": "Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+    },
+    {
+      "id": "r12", "root": "люб", "variants": ["любл"], "meaning": "cinta, suka", "stage": 5,
+      "members": [
+        {"ru": "люби́ть", "gloss": "mencintai, menyukai", "pattern": "-ить"},
+        {"ru": "любо́вь", "gloss": "cinta", "pattern": "-овь"},
+        {"ru": "люби́мый", "gloss": "tercinta, favorit", "pattern": "-имый"},
+        {"ru": "люби́тель", "gloss": "penggemar, amatir", "pattern": "-тель"}
+      ],
+      "note": "Bentuk я menyisipkan л: люблю́. Sisipan itu muncul pada semua kata kerja yang akarnya berakhiran б, в, м, п, atau ф."
+    },
+    {
+      "id": "r13", "root": "стро", "meaning": "bangun", "stage": 6,
+      "members": [
+        {"ru": "стро́ить", "gloss": "membangun", "pattern": "-ить"},
+        {"ru": "стро́йка", "gloss": "proyek bangunan", "pattern": "-йка"},
+        {"ru": "строи́тель", "gloss": "tukang bangunan", "pattern": "-тель"},
+        {"ru": "постро́ить", "gloss": "membangun (sampai selesai)", "pattern": "по- + -ить"}
+      ],
+      "note": "Perhatikan perpindahan tekanan: стро́ить tetapi строи́тель."
+    },
+    {
+      "id": "r14", "root": "врем", "variants": ["времен"], "meaning": "waktu", "stage": 6,
+      "members": [
+        {"ru": "вре́мя", "gloss": "waktu", "pattern": "-я"},
+        {"ru": "вре́менный", "gloss": "sementara", "pattern": "-енный"},
+        {"ru": "вре́менно", "gloss": "untuk sementara", "pattern": "-енно"},
+        {"ru": "совреме́нный", "gloss": "modern, masa kini", "pattern": "со- + -енный"}
+      ],
+      "note": "Akarnya memanjang menjadi времен- pada hampir semua bentuk selain nominatif: вре́мени, времена́."
+    }
+  ],
+  "patterns": [
+    {
+      "id": "w01", "affix": "-тель", "type": "akhiran", "function": "pelaku atau alat", "stage": 2,
+      "examples": [
+        {"ru": "учи́тель", "gloss": "guru", "root": "уч"},
+        {"ru": "писа́тель", "gloss": "penulis", "root": "пис"},
+        {"ru": "жи́тель", "gloss": "penduduk", "root": "жи"}
+      ],
+      "note": "Selalu maskulin. Bentuk perempuannya menambah -ница: учи́тельница."
+    },
+    {
+      "id": "w02", "affix": "-ник", "type": "akhiran", "function": "pelaku atau benda yang berkaitan", "stage": 3,
+      "examples": [
+        {"ru": "рабо́тник", "gloss": "pegawai", "root": "работ"},
+        {"ru": "учени́к", "gloss": "murid", "root": "уч"},
+        {"ru": "уче́бник", "gloss": "buku pelajaran", "root": "уч"}
+      ],
+      "note": "Maknanya kurang tetap daripada -тель: bisa orang (рабо́тник) atau benda (уче́бник)."
+    },
+    {
+      "id": "w03", "affix": "-ство", "type": "akhiran", "function": "hal atau keadaan yang abstrak", "stage": 5,
+      "examples": [
+        {"ru": "знако́мство", "gloss": "perkenalan", "root": "зна"},
+        {"ru": "бога́тство", "gloss": "kekayaan", "root": "богат"}
+      ],
+      "note": "Selalu netral: знако́мство бы́ло прия́тным (perkenalannya menyenangkan)."
+    },
+    {
+      "id": "w04", "affix": "-ение, -ание", "type": "akhiran", "function": "nama kegiatan, dari kata kerja", "stage": 4,
+      "examples": [
+        {"ru": "чте́ние", "gloss": "kegiatan membaca", "root": "чт"},
+        {"ru": "зна́ние", "gloss": "pengetahuan", "root": "зна"},
+        {"ru": "объясне́ние", "gloss": "penjelasan", "root": "ясн"}
+      ],
+      "note": "Padanan terdekatnya dalam Bahasa Indonesia adalah imbuhan pe-...-an (membaca menjadi pembacaan). Selalu netral."
+    },
+    {
+      "id": "w05", "affix": "-ость", "type": "akhiran", "function": "sifat yang dibendakan", "stage": 5,
+      "examples": [
+        {"ru": "но́вость", "gloss": "berita, hal baru", "root": "нов"},
+        {"ru": "мо́лодость", "gloss": "masa muda", "root": "молод"},
+        {"ru": "ра́дость", "gloss": "kegembiraan", "root": "рад"}
+      ],
+      "note": "Selalu feminin meski berakhiran ь. Dari kata sifat menjadi kata benda abstrak."
+    },
+    {
+      "id": "w06", "affix": "-ка", "type": "akhiran", "function": "bentuk kecil, benda, atau bentuk perempuan", "stage": 3,
+      "examples": [
+        {"ru": "ру́чка", "gloss": "pulpen, pegangan", "root": "рук"},
+        {"ru": "запи́ска", "gloss": "catatan kecil", "root": "пис"},
+        {"ru": "студе́нтка", "gloss": "mahasiswi", "root": "студент"}
+      ],
+      "note": "Tiga fungsi sekaligus, dan hanya konteks yang membedakannya. Pada ру́чка, huruf к pada рука́ menjadi ч."
+    },
+    {
+      "id": "w07", "affix": "-ый, -ий, -ой", "type": "akhiran", "function": "pembentuk kata sifat", "stage": 4,
+      "examples": [
+        {"ru": "дома́шний", "gloss": "rumahan", "root": "дом"},
+        {"ru": "жило́й", "gloss": "hunian", "root": "жи"},
+        {"ru": "ру́сский", "gloss": "Rusia", "root": "рус"}
+      ],
+      "note": "Pilihan di antara ketiganya bergantung letak tekanan dan huruf terakhir akarnya."
+    },
+    {
+      "id": "w08", "affix": "-ся, -сь", "type": "akhiran", "function": "refleksif: tindakan kembali kepada pelakunya", "stage": 5,
+      "examples": [
+        {"ru": "учи́ться", "gloss": "belajar (mengajari diri)", "root": "уч"},
+        {"ru": "знако́миться", "gloss": "berkenalan", "root": "зна"}
+      ],
+      "note": "Ditulis -ся sesudah konsonan dan -сь sesudah vokal: учу́сь tetapi у́чится. Akhiran -тся dan -ться dilafalkan 'tsa'."
+    },
+    {
+      "id": "w09", "affix": "в-, вы-", "type": "awalan", "function": "masuk ke dalam dan keluar dari", "stage": 4,
+      "examples": [
+        {"ru": "вход", "gloss": "pintu masuk", "root": "ход"},
+        {"ru": "вы́ход", "gloss": "pintu keluar", "root": "ход"},
+        {"ru": "входи́ть", "gloss": "masuk", "root": "ход"},
+        {"ru": "выходи́ть", "gloss": "keluar", "root": "ход"}
+      ],
+      "note": "Pada kata kerja perfektif, awalan вы- selalu menarik tekanan ke dirinya sendiri: вы́йти, вы́пить."
+    },
+    {
+      "id": "w10", "affix": "при-, у-", "type": "awalan", "function": "datang dan pergi menjauh", "stage": 5,
+      "examples": [
+        {"ru": "приходи́ть", "gloss": "datang (jalan kaki)", "root": "ход"},
+        {"ru": "уходи́ть", "gloss": "pergi meninggalkan", "root": "ход"},
+        {"ru": "прие́хать", "gloss": "datang (berkendara)", "root": "ех"},
+        {"ru": "уе́хать", "gloss": "pergi (berkendara)", "root": "ех"}
+      ],
+      "note": "Pasangan при- dan у- adalah pasangan arah yang paling sering dipakai pada kata kerja gerak."
+    },
+    {
+      "id": "w11", "affix": "по-", "type": "awalan", "function": "menuntaskan, atau melakukan sebentar", "stage": 4,
+      "examples": [
+        {"ru": "поговори́ть", "gloss": "berbicara sebentar", "root": "говор"},
+        {"ru": "почита́ть", "gloss": "membaca sebentar", "root": "чит"},
+        {"ru": "посмотре́ть", "gloss": "melihat, menonton (sekali)", "root": "смотр"}
+      ],
+      "note": "Awalan pembentuk perfektif yang paling sering dipakai. Pada banyak kata ia menambahkan makna 'sebentar'."
+    },
+    {
+      "id": "w12", "affix": "пере-", "type": "awalan", "function": "melintasi atau mengulang", "stage": 6,
+      "examples": [
+        {"ru": "перехо́д", "gloss": "penyeberangan", "root": "ход"},
+        {"ru": "переходи́ть", "gloss": "menyeberang", "root": "ход"},
+        {"ru": "переписа́ть", "gloss": "menulis ulang", "root": "пис"}
+      ],
+      "note": "Dua makna yang berbeda jauh: melintasi ruang (перехо́д) dan mengerjakan ulang (переписа́ть)."
+    }
+  ],
+  "items": [
+    {"id": "r-q01", "type": "mcq", "stage": 2,
+     "prompt": "Apa fungsi akhiran -тель?", "prompt_ru": "-тель",
+     "options_lang": "id", "options": ["Menandai pelaku atau alat", "Menandai bentuk jamak", "Menandai kala lampau", "Menandai kata sifat"], "answer": 0,
+     "explain": "учи́тель (pengajar), писа́тель (penulis), жи́тель (penghuni). Padanannya mirip awalan pe- dalam Bahasa Indonesia."},
+    {"id": "r-q02", "type": "mcq", "stage": 4,
+     "prompt": "Pada papan stasiun metro tertulis ВЫХОД. Apa artinya?", "prompt_ru": "ВЫХОД", "stress_marked": false,
+     "options_lang": "id", "options": ["Pintu keluar", "Pintu masuk", "Dilarang masuk", "Tangga"], "answer": 0,
+     "explain": "Awalan вы- berarti keluar, dan akar ход- berarti gerak. Pasangannya ВХОД (pintu masuk)."},
+    {"id": "r-q03", "type": "mcq", "stage": 3,
+     "prompt": "Kata письмо́ (surat) berasal dari akar apa?", "prompt_ru": "письмо́",
+     "options_lang": "ru", "options": ["пис", "письм", "мо", "сьм"], "answer": 0,
+     "explain": "Akarnya пис- (tulis), sama dengan писа́ть dan писа́тель. Surat adalah 'yang dituliskan'."},
+    {"id": "r-q04", "type": "mcq", "stage": 3,
+     "prompt": "Mengapa писа́ть menjadi пишу́ pada bentuk 'saya'?", "prompt_ru": null,
+     "options_lang": "id", "options": [
+       "Karena huruf с pada akarnya berubah menjadi ш",
+       "Karena пишу́ berasal dari akar yang lain",
+       "Karena tekanannya berpindah",
+       "Karena писа́ть kata kerja perfektif"], "answer": 0,
+     "explain": "Pergantian с dan ш juga muncul pada сказа́ть yang menjadi скажу́ (з menjadi ж). Perubahan ini harus dihafal per kata kerja."},
+    {"id": "r-q05", "type": "mcq", "stage": 4,
+     "prompt": "Apa beda до́ма dan дома́?", "prompt_ru": null,
+     "options_lang": "id", "options": [
+       "до́ма berarti 'di rumah', дома́ berarti 'rumah-rumah'",
+       "Keduanya sama artinya",
+       "до́ма berarti 'ke rumah', дома́ berarti 'di rumah'",
+       "дома́ adalah bentuk kala lampau"], "answer": 0,
+     "explain": "Hanya letak tekanan yang membedakannya. Untuk 'ke rumah' dipakai домо́й."},
+    {"id": "r-q06", "type": "mcq", "stage": 5,
+     "prompt": "Apa arti akhiran -ся pada учи́ться?", "prompt_ru": "учи́ться",
+     "options_lang": "id", "options": [
+       "Tindakannya kembali kepada pelakunya: belajar, bukan mengajar",
+       "Menandai kala depan",
+       "Menandai bentuk jamak",
+       "Menandai bentuk sopan"], "answer": 0,
+     "explain": "учи́ть berarti mengajar atau menghafal; учи́ться berarti belajar, yaitu mengajari diri sendiri."},
+    {"id": "r-q07", "type": "mcq", "stage": 5,
+     "prompt": "Salam До свида́ния berakar sama dengan kata kerja apa?", "prompt_ru": "до свида́ния",
+     "options_lang": "ru", "options": ["ви́деть", "сиде́ть", "дава́ть", "ждать"], "answer": 0,
+     "explain": "Akarnya вид- (lihat), sehingga harfiahnya 'sampai (kita) saling melihat lagi'."},
+    {"id": "r-q08", "type": "mcq", "stage": 4,
+     "prompt": "Mana kata yang BUKAN berasal dari akar уч- (ajar)?", "prompt_ru": null,
+     "options_lang": "ru", "options": ["у́лица", "учи́тель", "учени́к", "уче́бник"], "answer": 0,
+     "explain": "у́лица (jalan) hanya kebetulan dimulai dengan у. Huruf pertama yang sama tidak berarti akar yang sama."},
+    {"id": "r-q09", "type": "mcq", "stage": 6,
+     "prompt": "Awalan пере- pada переписа́ть menambahkan makna apa?", "prompt_ru": "переписа́ть",
+     "options_lang": "id", "options": ["Mengulang: menulis ulang", "Menyeberang", "Mulai menulis", "Berhenti menulis"], "answer": 0,
+     "explain": "Awalan пере- punya dua makna: melintasi (перехо́д) dan mengulang (переписа́ть). Konteks yang memilih."},
+    {"id": "r-q10", "type": "mcq", "stage": 5,
+     "prompt": "Akar друг- muncul dalam tiga bentuk. Mana ketiganya?", "prompt_ru": null,
+     "options_lang": "ru", "options": ["друг, друж, друз", "друг, драг, дрог", "друг, друк, друх", "друг, дург, грудь"], "answer": 0,
+     "explain": "друг (teman), дру́жба (persahabatan), друзья́ (teman-teman). Pergantian г-ж-з adalah sisa kaidah bunyi Slavia kuno."}
+  ]
+}

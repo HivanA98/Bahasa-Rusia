@@ -1,0 +1,582 @@
+{
+  "module": 3,
+  "title": "Tata bahasa dasar",
+  "description": "Empat belas topik tata bahasa Rusia tingkat A1-A2, termasuk keenam kasus, dengan penjelasan, pengecualian, dan soal.",
+  "schema": {
+    "id": "pengenal topik (g##)",
+    "stage": "tahap 1-6",
+    "explanation": "penjelasan dalam Bahasa Indonesia",
+    "caveats": "pengecualian dan batas berlakunya aturan, bukan aturan mutlak",
+    "examples": "contoh kalimat bertanda tekanan penuh",
+    "items": "soal; options_lang menandai bahasa pilihan jawaban (ru/id); answer adalah indeks jawaban benar"
+  },
+  "topics": [
+    {
+      "id": "g01",
+      "title": "Kalimat tanpa 'adalah' dan tanpa kata sandang",
+      "stage": 1,
+      "explanation": "Pada kala kini, bahasa Rusia tidak memakai kata kerja penghubung 'adalah'. Я студе́нт hanya tersusun dari dua kata, 'saya' dan 'mahasiswa', lalu diterjemahkan 'Saya (adalah) mahasiswa'. Kata kerja быть (menjadi, ada) memang ada, tetapi pada kala kini ia tidak diucapkan. Bahasa Rusia juga tidak memiliki kata sandang seperti 'a' dan 'the' dalam Bahasa Inggris: кни́га bisa berarti 'sebuah buku' atau 'buku itu', bergantung konteks. Dalam tulisan, bila kedua sisi kalimat berupa kata benda, dipakai tanda pisah: Москва́ — большо́й го́род.",
+      "caveats": [
+        "Pada kala lampau dan kala depan, быть WAJIB muncul: Он был студе́нтом (Dia dulu mahasiswa), Он бу́дет студе́нтом (Dia akan menjadi mahasiswa). Perhatikan bahwa kata bendanya lalu memakai kasus instrumental.",
+        "Tanda pisah biasanya tidak dipakai bila subjeknya kata ganti: Я студе́нт, bukan Я — студе́нт, kecuali untuk penegasan.",
+        "Bentuk kini быть, yaitu есть, tetap dipakai pada pola kepemilikan У меня́ есть кни́га dan pada definisi ilmiah."
+      ],
+      "examples": [
+        {"ru": "Э́то кни́га.", "gloss": "Ini buku."},
+        {"ru": "Я студе́нт.", "gloss": "Saya mahasiswa."},
+        {"ru": "Он врач.", "gloss": "Dia dokter."},
+        {"ru": "Москва́ — большо́й го́род.", "gloss": "Moskwa kota besar."}
+      ],
+      "items": [
+        {"id": "g01-01", "type": "mcq", "prompt": "Bagaimana mengatakan 'Saya mahasiswa'?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["Я студе́нт.", "Я есть студе́нт.", "Я быть студе́нт.", "Я студе́нтом."], "answer": 0,
+         "explain": "Tanpa kata kerja apa pun. Я есть студе́нт terdengar seperti bahasa Rusia kuno atau terjemahan kaku dari Bahasa Inggris."},
+        {"id": "g01-02", "type": "mcq", "prompt": "Apa arti Э́то кни́га?", "prompt_ru": "Э́то кни́га.",
+         "options_lang": "id", "options": ["Ini buku", "Buku ini", "Buku itu ada", "Milik buku ini"], "answer": 0,
+         "explain": "'Buku ini' adalah э́та кни́га (dengan э́та yang menyesuaikan gender). Э́то кни́га memperkenalkan atau menamai sesuatu."},
+        {"id": "g01-03", "type": "mcq", "prompt": "Bagaimana bahasa Rusia menerjemahkan 'a book' dan 'the book'?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Keduanya кни́га; tidak ada kata sandang",
+           "кни́га untuk 'a', э́то кни́га untuk 'the'",
+           "оди́н кни́га untuk 'a'",
+           "кни́гу untuk 'the'"], "answer": 0,
+         "explain": "Bahasa Rusia tidak memiliki kata sandang. Bila perlu ditegaskan, dipakai kata tunjuk э́тот/э́та/э́то atau susunan kata di dalam kalimat."},
+        {"id": "g01-04", "type": "mcq", "prompt": "Kalimat 'Dia dulu seorang guru' memerlukan apa?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Kata kerja был, karena быть wajib muncul pada kala lampau",
+           "Tidak memerlukan tambahan apa pun",
+           "Kata э́то di depan",
+           "Kata есть"], "answer": 0,
+         "explain": "Он был учи́телем. Kata bendanya memakai kasus instrumental sesudah был."},
+        {"id": "g01-05", "type": "mcq", "prompt": "Mengapa Москва́ — большо́й го́род memakai tanda pisah?", "prompt_ru": "Москва́ — большо́й го́род.",
+         "options_lang": "id", "options": [
+           "Karena kedua sisinya kata benda dan kata kerja penghubungnya dihilangkan",
+           "Karena Москва́ nama kota",
+           "Karena kalimatnya panjang",
+           "Karena большо́й kata sifat"], "answer": 0,
+         "explain": "Tanda pisah menggantikan kata kerja yang dihilangkan. Bila subjeknya kata ganti (Я студе́нт), tanda itu tidak dipakai."}
+      ]
+    },
+    {
+      "id": "g02",
+      "title": "Gender kata benda: maskulin, feminin, netral",
+      "stage": 1,
+      "explanation": "Setiap kata benda Rusia bergender maskulin, feminin, atau netral. Gender itu menentukan bentuk kata sifat, kata ganti kepemilikan, dan kata kerja kala lampau, sehingga harus diketahui sejak kata itu dihafal. Petunjuknya ada pada akhiran bentuk dasar: berakhiran konsonan berarti maskulin (дом, стол, брат); berakhiran -а atau -я berarti feminin (кни́га, семья́); berakhiran -о atau -е berarti netral (окно́, мо́ре); berakhiran -ь bisa maskulin atau feminin (день maskulin, дверь feminin).",
+      "caveats": [
+        "Kata yang menyebut lelaki tetap MASKULIN meski berakhiran -а: па́па, де́душка, мужчи́на. Gender mengikuti kenyataan, bukan bentuk.",
+        "Kata serapan yang tidak berubah bentuk umumnya netral: метро́, кафе́, такси́. Tetapi ко́фе bergender maskulin, dan dalam percakapan sehari-hari banyak orang memakainya sebagai netral.",
+        "Kelompok kata berakhiran -мя bergender netral walaupun berakhiran -я: и́мя (nama), вре́мя (waktu).",
+        "Untuk kata berakhiran -ь tidak ada kaidah yang bisa diandalkan. Hafalkan gendernya bersama katanya."
+      ],
+      "examples": [
+        {"ru": "Э́то мой дом.", "gloss": "Ini rumah saya. (maskulin)"},
+        {"ru": "Э́то моя́ кни́га.", "gloss": "Ini buku saya. (feminin)"},
+        {"ru": "Э́то моё окно́.", "gloss": "Ini jendela saya. (netral)"},
+        {"ru": "Дверь откры́та.", "gloss": "Pintunya terbuka. (feminin, berakhiran ь)"}
+      ],
+      "items": [
+        {"id": "g02-01", "type": "mcq", "prompt": "Apa gender кни́га?", "prompt_ru": "кни́га",
+         "options_lang": "id", "options": ["Feminin", "Maskulin", "Netral", "Tidak bergender"], "answer": 0,
+         "explain": "Berakhiran -а, jadi feminin: моя́ кни́га, больша́я кни́га."},
+        {"id": "g02-02", "type": "mcq", "prompt": "Apa gender окно́?", "prompt_ru": "окно́",
+         "options_lang": "id", "options": ["Netral", "Feminin", "Maskulin", "Bisa netral atau feminin"], "answer": 0,
+         "explain": "Berakhiran -о, jadi netral: моё окно́, большо́е окно́."},
+        {"id": "g02-03", "type": "mcq", "prompt": "Kata benda berakhiran -ь bergender apa?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Bisa maskulin atau feminin; harus dihafal",
+           "Selalu feminin",
+           "Selalu maskulin",
+           "Selalu netral"], "answer": 0,
+         "explain": "день maskulin, дверь feminin, ночь feminin, слова́рь maskulin. Tidak ada kaidah yang bisa diandalkan."},
+        {"id": "g02-04", "type": "mcq", "prompt": "Mengapa па́па bergender maskulin padahal berakhiran -а?", "prompt_ru": "па́па",
+         "options_lang": "id", "options": [
+           "Karena yang dirujuknya lelaki; gender mengikuti kenyataan",
+           "Karena tekanannya di suku pertama",
+           "Karena kata serapan",
+           "Karena bentuk jamaknya па́пы"], "answer": 0,
+         "explain": "Sama dengan де́душка dan мужчи́на: мой па́па, bukan моя́ па́па."},
+        {"id": "g02-05", "type": "cloze", "prompt": "Lengkapi dengan bentuk 'milikku' yang tepat.", "prompt_ru": "... кни́га",
+         "options_lang": "ru", "options": ["моя́", "мой", "моё", "мои́"], "answer": 0,
+         "explain": "кни́га feminin, jadi моя́ кни́га. мой untuk maskulin, моё untuk netral, мои́ untuk jamak."}
+      ]
+    },
+    {
+      "id": "g03",
+      "title": "Kata ganti orang dan kepemilikan",
+      "stage": 2,
+      "explanation": "Kata ganti orang: я, ты, он, она́, оно́, мы, вы, они́. Kata ganti kepemilikan untuk orang pertama dan kedua berubah mengikuti gender benda yang dimiliki: мой дом, моя́ кни́га, моё окно́, мои́ кни́ги; begitu pula твой, наш, ваш. Untuk orang ketiga dipakai bentuk yang TIDAK pernah berubah: его́ (miliknya, lelaki), её (miliknya, perempuan), их (milik mereka).",
+      "caveats": [
+        "его́, её, dan их tidak berubah sama sekali: его́ дом, его́ кни́га, его́ о́кна. Inilah bagian termudah dari seluruh sistem kepemilikan.",
+        "Ada kata свой yang dipakai bila pemiliknya sama dengan subjek kalimat. Pemula boleh menundanya dan memakai мой/твой dulu.",
+        "его́ dilafalkan 'yi-VO' dan её dilafalkan 'yi-YO'. Huruf г pada его́ dibaca v.",
+        "Dalam surat resmi kepada satu orang, Вы ditulis dengan huruf kapital."
+      ],
+      "examples": [
+        {"ru": "Э́то мой дом.", "gloss": "Ini rumah saya."},
+        {"ru": "Э́то моя́ кни́га.", "gloss": "Ini buku saya."},
+        {"ru": "Э́то его́ сестра́.", "gloss": "Ini saudara perempuannya."},
+        {"ru": "Где ва́ши де́ти?", "gloss": "Di mana anak-anak Anda?"}
+      ],
+      "items": [
+        {"id": "g03-01", "type": "mcq", "prompt": "Mana bentuk 'milikku' untuk кни́га?", "prompt_ru": "... кни́га",
+         "options_lang": "ru", "options": ["моя́", "мой", "моё", "мои́"], "answer": 0,
+         "explain": "кни́га feminin. Bentuk kepemilikan orang pertama dan kedua selalu menyesuaikan gender."},
+        {"id": "g03-02", "type": "mcq", "prompt": "Mana bentuk 'miliknya' bila pemiliknya perempuan?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["её", "его́", "их", "она́"], "answer": 0,
+         "explain": "её кни́га berarti 'bukunya' (milik perempuan). его́ untuk pemilik lelaki, их untuk pemilik banyak orang."},
+        {"id": "g03-03", "type": "mcq", "prompt": "Apakah его́ berubah mengikuti gender benda yang dimiliki?", "prompt_ru": "его́",
+         "options_lang": "id", "options": [
+           "Tidak, bentuknya selalu tetap",
+           "Ya, menjadi его́я untuk benda feminin",
+           "Ya, menjadi ему́ untuk benda netral",
+           "Hanya berubah pada kala lampau"], "answer": 0,
+         "explain": "его́ дом, его́ кни́га, его́ окно́, его́ кни́ги. Bentuk ему́ ada, tetapi itu kasus datif dari он, bukan kepemilikan."},
+        {"id": "g03-04", "type": "cloze", "prompt": "Lengkapi dengan 'milik kami'.", "prompt_ru": "Э́то ... дом.",
+         "options_lang": "ru", "options": ["наш", "на́ша", "на́ше", "на́ши"], "answer": 0,
+         "explain": "дом maskulin, jadi наш дом. на́ша кни́га, на́ше окно́, на́ши де́ти."},
+        {"id": "g03-05", "type": "mcq", "prompt": "Kapan memakai вы, bukan ты?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Kepada orang yang belum dikenal, lebih tua, atau atasan; juga kepada lebih dari satu orang",
+           "Hanya kepada lebih dari satu orang",
+           "Hanya dalam tulisan",
+           "Kepada siapa pun yang lebih muda"], "answer": 0,
+         "explain": "вы memiliki dua fungsi sekaligus: jamak dan tunggal hormat. Memakai ты kepada orang asing dianggap kurang sopan."}
+      ]
+    },
+    {
+      "id": "g04",
+      "title": "Bentuk jamak nominatif",
+      "stage": 2,
+      "explanation": "Untuk kata benda maskulin dan feminin, bentuk jamak umumnya ditandai -ы atau -и: стол menjadi столы́, кни́га menjadi кни́ги. Huruf -и dipakai sesudah г, к, х, ж, ш, щ, ч dan pada kata berakhiran -ь atau -я: кни́ги, две́ри, неде́ли. Kata benda netral memakai -а atau -я: окно́ menjadi о́кна, мо́ре menjadi моря́.",
+      "caveats": [
+        "Banyak kata berbentuk jamak tidak beraturan yang harus dihafal satu per satu: брат menjadi бра́тья, друг menjadi друзья́, сын menjadi сыновья́, ребёнок menjadi де́ти, челове́к menjadi лю́ди.",
+        "Tekanan sering berpindah dan tidak bisa ditebak: дом menjadi дома́ (ke belakang), окно́ menjadi о́кна (ke depan). Hafalkan letak tekanannya bersama bentuknya.",
+        "Sebagian kata hanya berbentuk jamak dan tidak memiliki bentuk tunggal yang lazim: де́ньги (uang), часы́ (jam, alat), лю́ди (orang-orang).",
+        "Sesudah angka, bentuk yang dipakai bukan nominatif jamak melainkan genitif. Hal itu dibahas pada topik kasus genitif."
+      ],
+      "examples": [
+        {"ru": "Э́то столы́.", "gloss": "Ini meja-meja."},
+        {"ru": "Э́то кни́ги.", "gloss": "Ini buku-buku."},
+        {"ru": "Э́то о́кна.", "gloss": "Ini jendela-jendela."},
+        {"ru": "Э́то мои́ друзья́.", "gloss": "Ini teman-teman saya."}
+      ],
+      "items": [
+        {"id": "g04-01", "type": "cloze", "prompt": "Apa bentuk jamak dari стол?", "prompt_ru": "стол",
+         "options_lang": "ru", "options": ["столы́", "сто́лы", "стола́", "столи́"], "answer": 0,
+         "explain": "столы́ dengan tekanan di akhiran. Pilihan сто́лы ejaannya benar tetapi tekanannya salah, dan penutur Rusia akan langsung mendengar bedanya."},
+        {"id": "g04-02", "type": "cloze", "prompt": "Apa bentuk jamak dari кни́га?", "prompt_ru": "кни́га",
+         "options_lang": "ru", "options": ["кни́ги", "кни́гы", "кни́ге", "кни́гу"], "answer": 0,
+         "explain": "Sesudah г tidak pernah ditulis ы, sehingga кни́гы mustahil dalam ejaan Rusia. кни́ге dan кни́гу adalah bentuk kasus lain, bukan jamak."},
+        {"id": "g04-03", "type": "mcq", "prompt": "Mengapa bentuk jamak брат adalah бра́тья?", "prompt_ru": "брат",
+         "options_lang": "id", "options": [
+           "Karena bentuknya tidak beraturan dan harus dihafal",
+           "Karena брат bergender feminin",
+           "Karena semua kata berakhiran -т memakai -ья",
+           "Karena tekanannya di suku pertama"], "answer": 0,
+         "explain": "Kelompok kecil kata memakai -ья: бра́тья, сту́лья, сыновья́. Tidak ada kaidah yang memberi tahu kata mana yang masuk kelompok ini."},
+        {"id": "g04-04", "type": "mcq", "prompt": "Apa bentuk jamak dari челове́к?", "prompt_ru": "челове́к",
+         "options_lang": "ru", "options": ["лю́ди", "челове́ки", "челове́ка", "челове́ко"], "answer": 0,
+         "explain": "Kata yang sama sekali lain. Tetapi sesudah angka tetap dipakai челове́к: пять челове́к (lima orang)."},
+        {"id": "g04-05", "type": "mcq", "prompt": "Apa bentuk jamak dari окно́?", "prompt_ru": "окно́",
+         "options_lang": "ru", "options": ["о́кна", "окна́", "окно́в", "о́кны"], "answer": 0,
+         "explain": "Netral memakai -а, dan tekanannya berpindah ke depan: окно́ menjadi о́кна. Bentuk окна́ dengan tekanan di belakang adalah genitif tunggal."}
+      ]
+    },
+    {
+      "id": "g05",
+      "title": "Kala kini: konjugasi pertama (-ать)",
+      "stage": 3,
+      "explanation": "Kata kerja berakhiran -ать dan -ять umumnya mengikuti konjugasi pertama. Contohnya рабо́тать: я рабо́таю, ты рабо́таешь, он рабо́тает, мы рабо́таем, вы рабо́таете, они́ рабо́тают. Berbeda dari bahasa Spanyol atau Italia, kata gantinya tetap diucapkan dan tidak boleh dihilangkan. Kala kini bahasa Rusia mencakup dua makna sekaligus: Я чита́ю bisa berarti 'saya membaca (biasanya)' maupun 'saya sedang membaca'.",
+      "caveats": [
+        "Tidak semua kata berakhiran -ать masuk konjugasi pertama. спать dan ждать, misalnya, berperilaku lain: сплю, спишь dan жду, ждёшь.",
+        "Sebagian kata kerja mengubah konsonan akarnya: писа́ть menjadi пишу́, пи́шешь; сказа́ть menjadi скажу́, ска́жешь.",
+        "Tekanan bisa berpindah antara bentuk dasar dan bentuk terkonjugasi: писа́ть tetapi пи́шешь. Inilah sumber kesalahan yang paling sering terdengar."
+      ],
+      "examples": [
+        {"ru": "Я рабо́таю здесь.", "gloss": "Saya bekerja di sini."},
+        {"ru": "Ты рабо́таешь сего́дня?", "gloss": "Kamu bekerja hari ini?"},
+        {"ru": "Он чита́ет кни́гу.", "gloss": "Dia membaca buku."},
+        {"ru": "Они́ чита́ют мно́го.", "gloss": "Mereka banyak membaca."}
+      ],
+      "items": [
+        {"id": "g05-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk рабо́тать yang tepat.", "prompt_ru": "Я ... в ба́нке.",
+         "options_lang": "ru", "options": ["рабо́таю", "рабо́таешь", "рабо́тает", "рабо́тают"], "answer": 0,
+         "explain": "Bentuk я berakhiran -ю pada konjugasi pertama."},
+        {"id": "g05-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk чита́ть yang tepat.", "prompt_ru": "Они́ ... кни́ги.",
+         "options_lang": "ru", "options": ["чита́ют", "чита́ем", "чита́ет", "чита́ешь"], "answer": 0,
+         "explain": "Bentuk они́ berakhiran -ют pada konjugasi pertama."},
+        {"id": "g05-03", "type": "mcq", "prompt": "Apa akhiran untuk мы pada konjugasi pertama?", "prompt_ru": null,
+         "options_lang": "id", "options": ["-ем", "-ете", "-ют", "-ешь"], "answer": 0,
+         "explain": "мы рабо́таем. Akhiran -ете untuk вы, -ют untuk они́, -ешь untuk ты."},
+        {"id": "g05-04", "type": "mcq", "prompt": "Apa saja arti Я чита́ю?", "prompt_ru": "Я чита́ю.",
+         "options_lang": "id", "options": [
+           "'Saya membaca' dan 'saya sedang membaca'",
+           "Hanya 'saya sedang membaca'",
+           "Hanya 'saya akan membaca'",
+           "'Saya sudah membaca'"], "answer": 0,
+         "explain": "Bahasa Rusia tidak membedakan bentuk 'sedang' dan 'biasa' pada kala kini. Konteks yang menentukan."},
+        {"id": "g05-05", "type": "cloze", "prompt": "Lengkapi dengan bentuk знать yang tepat.", "prompt_ru": "Ты ... его́?",
+         "options_lang": "ru", "options": ["зна́ешь", "зна́ю", "зна́ет", "зна́ете"], "answer": 0,
+         "explain": "Bentuk ты berakhiran -ешь. зна́ете dipakai untuk вы."}
+      ]
+    },
+    {
+      "id": "g06",
+      "title": "Kala kini: konjugasi kedua (-ить) dan kata kerja tak beraturan",
+      "stage": 3,
+      "explanation": "Kata kerja berakhiran -ить umumnya mengikuti konjugasi kedua. Contohnya говори́ть: я говорю́, ты говори́шь, он говори́т, мы говори́м, вы говори́те, они́ говоря́т. Perhatikan huruf и pada akhirannya, sedangkan konjugasi pertama memakai е. Beberapa kata kerja terpenting sama sekali tidak beraturan dan harus dihafal utuh: хоте́ть, мочь, есть, пить, идти́, е́хать.",
+      "caveats": [
+        "Akhiran -ят menjadi -ат sesudah ж, ч, ш, щ, karena ejaan Rusia tidak menulis я sesudah huruf itu: учи́ть menjadi они́ у́чат.",
+        "Kata kerja berakhiran б, в, м, п, ф menyisipkan л pada bentuk я: люби́ть menjadi люблю́, спать menjadi сплю, купи́ть menjadi куплю́.",
+        "хоте́ть separuh mengikuti konjugasi pertama (хочу́, хо́чешь, хо́чет) dan separuh konjugasi kedua (хоти́м, хоти́те, хотя́т).",
+        "Akhiran -ить tidak menjamin konjugasi kedua: жить masuk konjugasi pertama (живу́, живёшь)."
+      ],
+      "examples": [
+        {"ru": "Я говорю́ по-ру́сски.", "gloss": "Saya berbicara bahasa Rusia."},
+        {"ru": "Ты говори́шь бы́стро.", "gloss": "Kamu berbicara cepat."},
+        {"ru": "Они́ говоря́т о рабо́те.", "gloss": "Mereka berbicara tentang pekerjaan."},
+        {"ru": "Я люблю́ чай.", "gloss": "Saya suka teh."}
+      ],
+      "items": [
+        {"id": "g06-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk говори́ть yang tepat.", "prompt_ru": "Я ... по-ру́сски.",
+         "options_lang": "ru", "options": ["говорю́", "говори́шь", "говори́т", "говоря́т"], "answer": 0,
+         "explain": "Bentuk я pada konjugasi kedua berakhiran -ю, dengan akar tanpa perubahan."},
+        {"id": "g06-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk люби́ть yang tepat.", "prompt_ru": "Я ... ру́сский чай.",
+         "options_lang": "ru", "options": ["люблю́", "лю́бишь", "любю́", "лю́бит"], "answer": 0,
+         "explain": "Huruf б menuntut sisipan л pada bentuk я: люблю́. Bentuk любю́ tidak ada dalam bahasa Rusia."},
+        {"id": "g06-03", "type": "mcq", "prompt": "Mana bentuk 'saya mau'?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["хочу́", "хоте́ю", "хоти́шь", "хочи́"], "answer": 0,
+         "explain": "хоте́ть tidak beraturan: хочу́, хо́чешь, хо́чет, lalu хоти́м, хоти́те, хотя́т."},
+        {"id": "g06-04", "type": "mcq", "prompt": "Mengapa bentuk они́ dari учи́ть adalah у́чат, bukan у́чят?", "prompt_ru": "учи́ть",
+         "options_lang": "id", "options": [
+           "Karena ejaan Rusia tidak menulis я sesudah ч",
+           "Karena учи́ть masuk konjugasi pertama",
+           "Karena tekanannya berpindah",
+           "Karena учи́ть kata kerja refleksif"], "answer": 0,
+         "explain": "Kaidah ejaan yang sama berlaku sesudah ж, ш, щ: они́ пи́шут, они́ у́чат."},
+        {"id": "g06-05", "type": "cloze", "prompt": "Lengkapi dengan bentuk мочь yang tepat.", "prompt_ru": "Он не ... сейча́с.",
+         "options_lang": "ru", "options": ["мо́жет", "мо́гет", "мо́жешь", "могу́т"], "answer": 0,
+         "explain": "мочь bergantian г dan ж: могу́ tetapi мо́жешь, мо́жет, мо́жем, мо́жете, dan мо́гут."}
+      ]
+    },
+    {
+      "id": "g07",
+      "title": "Kasus akusatif: objek langsung",
+      "stage": 3,
+      "explanation": "Objek langsung sebuah kata kerja memakai kasus akusatif. Kata benda feminin berakhiran -а menjadi -у dan -я menjadi -ю: кни́га menjadi кни́гу. Kata benda maskulin TAK BERNYAWA dan netral tidak berubah sama sekali: Я ви́жу дом, Я ви́жу окно́. Kata benda maskulin BERNYAWA memakai bentuk yang sama dengan genitif: брат menjadi бра́та, друг menjadi дру́га. Kata ganti memiliki bentuknya sendiri: меня́, тебя́, его́, её, нас, вас, их.",
+      "caveats": [
+        "Pada bentuk jamak, semua kata benda bernyawa (bukan hanya maskulin) memakai bentuk genitif: Я ви́жу друзе́й, Я ви́жу сестёр.",
+        "Akusatif juga dipakai sesudah в dan на untuk menyatakan ARAH: Я иду́ в шко́лу (ke sekolah), bandingkan dengan Я в шко́ле (di sekolah).",
+        "Sebagian kata kerja menuntut kasus lain, bukan akusatif: помога́ть memakai datif (помога́ть ма́ме), по́льзоваться memakai instrumental."
+      ],
+      "examples": [
+        {"ru": "Я чита́ю кни́гу.", "gloss": "Saya membaca buku."},
+        {"ru": "Я ви́жу дом.", "gloss": "Saya melihat rumah."},
+        {"ru": "Я ви́жу бра́та.", "gloss": "Saya melihat saudara lelaki saya."},
+        {"ru": "Я иду́ в шко́лу.", "gloss": "Saya pergi ke sekolah."}
+      ],
+      "items": [
+        {"id": "g07-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk кни́га yang tepat.", "prompt_ru": "Я чита́ю ...",
+         "options_lang": "ru", "options": ["кни́гу", "кни́га", "кни́ге", "кни́ги"], "answer": 0,
+         "explain": "Objek langsung feminin -а menjadi -у: кни́гу."},
+        {"id": "g07-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk брат yang tepat.", "prompt_ru": "Я ви́жу ...",
+         "options_lang": "ru", "options": ["бра́та", "брат", "бра́ту", "бра́том"], "answer": 0,
+         "explain": "брат maskulin bernyawa, sehingga akusatifnya sama dengan genitif: бра́та."},
+        {"id": "g07-03", "type": "mcq", "prompt": "Mengapa дом tidak berubah pada Я ви́жу дом?", "prompt_ru": "Я ви́жу дом.",
+         "options_lang": "id", "options": [
+           "Karena maskulin tak bernyawa tidak berubah pada akusatif",
+           "Karena дом kata serapan",
+           "Karena ви́деть tidak memerlukan kasus",
+           "Karena дом sudah berbentuk akusatif jamak"], "answer": 0,
+         "explain": "Nominatif dan akusatifnya sama bentuknya. Hanya kata bernyawa yang berubah: Я ви́жу бра́та."},
+        {"id": "g07-04", "type": "cloze", "prompt": "Lengkapi dengan bentuk шко́ла yang tepat.", "prompt_ru": "Я иду́ в ...",
+         "options_lang": "ru", "options": ["шко́лу", "шко́ле", "шко́ла", "шко́лы"], "answer": 0,
+         "explain": "Menyatakan ARAH, jadi akusatif: в шко́лу. Bila tempat (di sekolah), dipakai в шко́ле."},
+        {"id": "g07-05", "type": "mcq", "prompt": "Apa bentuk akusatif dari я?", "prompt_ru": "я",
+         "options_lang": "ru", "options": ["меня́", "мне", "я", "мной"], "answer": 0,
+         "explain": "Он ви́дит меня́. Bentuk мне datif, мной instrumental."}
+      ]
+    },
+    {
+      "id": "g08",
+      "title": "Kasus prepositional: menyatakan tempat",
+      "stage": 4,
+      "explanation": "Kasus prepositional hanya muncul sesudah preposisi, terutama в dan на untuk tempat serta о untuk topik pembicaraan. Akhirannya umumnya -е: шко́ла menjadi в шко́ле, стол menjadi на столе́, Москва́ menjadi в Москве́. Kata benda feminin berakhiran -ь dan kata berakhiran -ия memakai -и: дверь menjadi о две́ри, Росси́я menjadi в Росси́и. Pasangan terpenting yang harus dikuasai: в шко́ле berarti 'di sekolah' (prepositional) sedangkan в шко́лу berarti 'ke sekolah' (akusatif).",
+      "caveats": [
+        "Sebagian kata memakai на, bukan в, tanpa alasan yang bisa diterka: на рабо́те (di tempat kerja), на у́лице (di jalan), на по́чте (di kantor pos). Hafalkan bersama katanya.",
+        "Sekelompok kata benda maskulin memakai akhiran -у bertekanan sesudah в dan на: в лесу́ (di hutan), на полу́ (di lantai), в году́ (dalam tahun).",
+        "Kata serapan yang tidak berubah bentuk tetap tidak berubah: в метро́, в кафе́.",
+        "Preposisi о menjadi об di depan vokal: об э́том, об Анне."
+      ],
+      "examples": [
+        {"ru": "Я в шко́ле.", "gloss": "Saya di sekolah."},
+        {"ru": "Кни́га на столе́.", "gloss": "Buku di atas meja."},
+        {"ru": "Мы говори́м о рабо́те.", "gloss": "Kami berbicara tentang pekerjaan."},
+        {"ru": "Я живу́ в Росси́и.", "gloss": "Saya tinggal di Rusia."}
+      ],
+      "items": [
+        {"id": "g08-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk шко́ла yang tepat.", "prompt_ru": "Моя́ дочь в ...",
+         "options_lang": "ru", "options": ["шко́ле", "шко́лу", "шко́ла", "шко́лы"], "answer": 0,
+         "explain": "Menyatakan tempat, jadi prepositional: в шко́ле."},
+        {"id": "g08-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk стол yang tepat.", "prompt_ru": "Кни́га на ...",
+         "options_lang": "ru", "options": ["столе́", "стол", "стола́", "столо́м"], "answer": 0,
+         "explain": "на столе́ dengan tekanan pada akhiran. Bentuk на стол berarti 'ke atas meja'."},
+        {"id": "g08-03", "type": "mcq", "prompt": "Apa beda в шко́ле dan в шко́лу?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "в шко́ле = di sekolah (tempat); в шко́лу = ke sekolah (arah)",
+           "Keduanya sama, hanya beda gaya",
+           "в шко́ле = ke sekolah; в шко́лу = di sekolah",
+           "в шко́лу hanya dipakai dalam tulisan"], "answer": 0,
+         "explain": "Satu preposisi в memiliki dua makna, dan KASUS kata bendanya yang menentukan maknanya. Inilah sebabnya kasus tidak bisa dilewati."},
+        {"id": "g08-04", "type": "cloze", "prompt": "Lengkapi dengan bentuk Росси́я yang tepat.", "prompt_ru": "Я живу́ в ...",
+         "options_lang": "ru", "options": ["Росси́и", "Росси́е", "Росси́ю", "Росси́я"], "answer": 0,
+         "explain": "Kata berakhiran -ия memakai -ии pada prepositional: в Росси́и, в Индоне́зии."},
+        {"id": "g08-05", "type": "mcq", "prompt": "Kata mana yang memakai на, bukan в, untuk menyatakan 'di'?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["рабо́та", "шко́ла", "магази́н", "Москва́"], "answer": 0,
+         "explain": "на рабо́те (di tempat kerja), tetapi в шко́ле, в магази́не, в Москве́. Daftar kata ber-на harus dihafal."}
+      ]
+    },
+    {
+      "id": "g09",
+      "title": "Kasus genitif: kepemilikan, penolakan, dan jumlah",
+      "stage": 4,
+      "explanation": "Kasus genitif paling banyak fungsinya. Pertama, menyatakan hubungan 'milik' atau 'dari': кни́га бра́та (buku saudara lelaki). Kedua, sesudah нет untuk menyatakan ketiadaan: У меня́ нет вре́мени. Ketiga, sesudah preposisi из, от, до, для, без, у. Keempat, sesudah kata jumlah мно́го, ма́ло, ско́лько. Kelima, sesudah angka: 2, 3, dan 4 menuntut genitif TUNGGAL (два сы́на), sedangkan 5 dan lebih menuntut genitif JAMAK (пять книг). Akhirannya: maskulin dan netral -а atau -я, feminin -ы atau -и.",
+      "caveats": [
+        "Genitif jamak adalah bentuk tersulit dalam bahasa Rusia. Banyak kata feminin justru kehilangan akhirannya sama sekali: кни́га menjadi книг, мину́та menjadi мину́т.",
+        "Kata год memakai bentuk lain pada genitif jamak: пять лет, bukan пять годо́в.",
+        "Penolakan keberadaan selalu memakai genitif: Здесь нет магази́на, bukan Здесь нет магази́н.",
+        "Pada kalimat negatif, objek langsung kadang berubah dari akusatif ke genitif: Я не ви́жу кни́ги. Keduanya dipakai penutur, dan pilihannya bergantung nuansa."
+      ],
+      "examples": [
+        {"ru": "Э́то кни́га бра́та.", "gloss": "Ini buku saudara lelaki saya."},
+        {"ru": "У меня́ нет вре́мени.", "gloss": "Saya tidak punya waktu."},
+        {"ru": "Чай без са́хара.", "gloss": "Teh tanpa gula."},
+        {"ru": "Пять книг на столе́.", "gloss": "Lima buku di atas meja."}
+      ],
+      "items": [
+        {"id": "g09-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk брат yang tepat.", "prompt_ru": "Э́то кни́га ...",
+         "options_lang": "ru", "options": ["бра́та", "брат", "бра́ту", "бра́том"], "answer": 0,
+         "explain": "Hubungan kepemilikan memakai genitif: кни́га бра́та. Perhatikan susunannya terbalik dari Bahasa Indonesia."},
+        {"id": "g09-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk вре́мя yang tepat.", "prompt_ru": "У меня́ нет ...",
+         "options_lang": "ru", "options": ["вре́мени", "вре́мя", "вре́менем", "времена́"], "answer": 0,
+         "explain": "Sesudah нет selalu genitif. вре́мя termasuk kelompok -мя dengan genitif вре́мени."},
+        {"id": "g09-03", "type": "mcq", "prompt": "Kasus apa yang dipakai sesudah нет?", "prompt_ru": null,
+         "options_lang": "id", "options": ["Genitif", "Akusatif", "Datif", "Prepositional"], "answer": 0,
+         "explain": "Нет + genitif menyatakan ketiadaan: нет де́нег, нет вре́мени, нет пробле́м."},
+        {"id": "g09-04", "type": "cloze", "prompt": "Lengkapi dengan bentuk кни́га yang tepat.", "prompt_ru": "Пять ... на столе́.",
+         "options_lang": "ru", "options": ["книг", "кни́ги", "кни́гу", "кни́га"], "answer": 0,
+         "explain": "Angka 5 dan lebih menuntut genitif jamak, dan genitif jamak кни́га justru tanpa akhiran: книг."},
+        {"id": "g09-05", "type": "mcq", "prompt": "Apa bentuk genitif jamak dari год?", "prompt_ru": "год",
+         "options_lang": "ru", "options": ["лет", "годо́в", "го́ды", "го́да"], "answer": 0,
+         "explain": "Мне два́дцать лет (umur saya dua puluh tahun). Bentuk годо́в hanya muncul pada ungkapan tertentu dan bukan bentuk baku di sini."}
+      ]
+    },
+    {
+      "id": "g10",
+      "title": "Kasus datif: kepada siapa",
+      "stage": 5,
+      "explanation": "Kasus datif menandai penerima: kepada siapa sesuatu diberikan, dikatakan, atau ditujukan. Я пишу́ бра́ту (Saya menulis kepada saudara saya). Datif juga dipakai sesudah preposisi к dan по, pada pola Мне нра́вится (saya suka), dan untuk menyatakan umur serta perasaan: Мне два́дцать лет, Мне хо́лодно. Akhirannya: maskulin dan netral -у atau -ю, feminin -е atau -и. Kata gantinya: мне, тебе́, ему́, ей, нам, вам, им.",
+      "caveats": [
+        "нра́виться membalik susunan kalimat: yang disukai menjadi subjek. Мне нра́вится э́та кни́га harfiahnya 'buku ini menyenangkan bagi saya'. Karena itu bentuk kata kerjanya mengikuti bukunya, bukan mengikuti saya.",
+        "Sejumlah kata kerja menuntut datif walaupun dalam Bahasa Indonesia objeknya terasa langsung: помога́ть (membantu), звони́ть (menelepon), ве́рить (percaya).",
+        "Umur selalu dinyatakan dengan datif: Мне два́дцать лет, bukan Я два́дцать лет.",
+        "Preposisi к dipakai untuk menuju ORANG (к врачу́), sedangkan menuju tempat memakai в atau на."
+      ],
+      "examples": [
+        {"ru": "Я пишу́ бра́ту.", "gloss": "Saya menulis kepada saudara lelaki saya."},
+        {"ru": "Мне нра́вится Москва́.", "gloss": "Saya suka Moskwa."},
+        {"ru": "Мне два́дцать лет.", "gloss": "Umur saya dua puluh tahun."},
+        {"ru": "Он помога́ет ма́ме.", "gloss": "Dia membantu ibunya."}
+      ],
+      "items": [
+        {"id": "g10-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk ма́ма yang tepat.", "prompt_ru": "Я помога́ю ...",
+         "options_lang": "ru", "options": ["ма́ме", "ма́му", "ма́мы", "ма́мой"], "answer": 0,
+         "explain": "помога́ть menuntut datif: ма́ме. Bentuk ма́му akusatif, dan itulah kesalahan yang paling sering dibuat pelajar."},
+        {"id": "g10-02", "type": "mcq", "prompt": "Bagaimana mengatakan 'Saya suka buku ini'?", "prompt_ru": null,
+         "options_lang": "ru", "options": [
+           "Мне нра́вится э́та кни́га.",
+           "Я нра́влюсь э́ту кни́гу.",
+           "Я нра́вится э́та кни́га.",
+           "Мне нра́вится э́ту кни́гу."], "answer": 0,
+         "explain": "Orangnya datif (мне) dan bendanya nominatif (э́та кни́га), karena bendalah subjek kalimatnya."},
+        {"id": "g10-03", "type": "mcq", "prompt": "Bagaimana menyatakan umur dalam bahasa Rusia?", "prompt_ru": null,
+         "options_lang": "ru", "options": [
+           "Мне два́дцать лет.",
+           "Я два́дцать лет.",
+           "У меня́ два́дцать лет.",
+           "Я име́ю два́дцать лет."], "answer": 0,
+         "explain": "Umur memakai datif: Мне ... лет. Harfiahnya 'kepada saya ada dua puluh tahun'."},
+        {"id": "g10-04", "type": "mcq", "prompt": "Apa bentuk datif dari я?", "prompt_ru": "я",
+         "options_lang": "ru", "options": ["мне", "меня́", "мной", "я"], "answer": 0,
+         "explain": "Он помога́ет мне. Bentuk меня́ akusatif atau genitif, мной instrumental."},
+        {"id": "g10-05", "type": "mcq", "prompt": "Preposisi к memakai kasus apa?", "prompt_ru": "к",
+         "options_lang": "id", "options": ["Datif", "Genitif", "Akusatif", "Instrumental"], "answer": 0,
+         "explain": "к врачу́, к бра́ту, ко мне. Dipakai untuk menuju orang, bukan menuju tempat."}
+      ]
+    },
+    {
+      "id": "g11",
+      "title": "Kasus instrumental: dengan apa, dengan siapa",
+      "stage": 5,
+      "explanation": "Kasus instrumental menandai alat yang dipakai: Я пишу́ ру́чкой (Saya menulis dengan pulpen). Ia juga dipakai sesudah preposisi с untuk menyatakan penyerta: чай с молоко́м, Я иду́ с дру́гом. Fungsi ketiga: menyebut profesi atau keadaan sesudah быть pada kala lampau dan kala depan: Он был врачо́м. Akhirannya: maskulin dan netral -ом atau -ем, feminin -ой atau -ей. Kata gantinya: мной, тобо́й, им, ей, на́ми, ва́ми, и́ми.",
+      "caveats": [
+        "Alat TIDAK memakai preposisi с: Я пишу́ ру́чкой, bukan Я пишу́ с ру́чкой. Kalimat kedua berarti 'saya menulis sambil membawa pulpen'. Preposisi с hanya untuk penyerta.",
+        "Pada kala kini profesi memakai nominatif (Он врач), tetapi pada kala lampau dan depan memakai instrumental (Он был врачо́м, Он бу́дет врачо́м).",
+        "Preposisi с menjadi со di depan gugus konsonan tertentu: со мной, со стола́.",
+        "Preposisi с juga bisa berarti 'dari permukaan' bila memakai genitif: со стола́. Kasus kata bendanya yang membedakan."
+      ],
+      "examples": [
+        {"ru": "Чай с молоко́м.", "gloss": "Teh dengan susu."},
+        {"ru": "Я пишу́ ру́чкой.", "gloss": "Saya menulis dengan pulpen."},
+        {"ru": "Он был врачо́м.", "gloss": "Dia dulu dokter."},
+        {"ru": "Я иду́ с дру́гом.", "gloss": "Saya pergi dengan teman."}
+      ],
+      "items": [
+        {"id": "g11-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk молоко́ yang tepat.", "prompt_ru": "Чай с ...",
+         "options_lang": "ru", "options": ["молоко́м", "молоко́", "молока́", "молоке́"], "answer": 0,
+         "explain": "Sesudah с (penyerta) dipakai instrumental: молоко́м."},
+        {"id": "g11-02", "type": "mcq", "prompt": "Bagaimana mengatakan 'Saya menulis dengan pulpen'?", "prompt_ru": null,
+         "options_lang": "ru", "options": [
+           "Я пишу́ ру́чкой.",
+           "Я пишу́ с ру́чкой.",
+           "Я пишу́ ру́чку.",
+           "Я пишу́ ру́чке."], "answer": 0,
+         "explain": "Alat memakai instrumental tanpa preposisi. Dengan с maknanya berubah menjadi 'bersama pulpen'."},
+        {"id": "g11-03", "type": "cloze", "prompt": "Lengkapi dengan bentuk врач yang tepat.", "prompt_ru": "Он был ...",
+         "options_lang": "ru", "options": ["врачо́м", "врач", "врача́", "врачу́"], "answer": 0,
+         "explain": "Sesudah был, profesi memakai instrumental: врачо́м. Pada kala kini cukup Он врач."},
+        {"id": "g11-04", "type": "mcq", "prompt": "Kapan memakai с + instrumental?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Saat menyebut penyerta ('bersama'), bukan alat",
+           "Setiap kali menerjemahkan kata 'dengan'",
+           "Hanya untuk benda, bukan orang",
+           "Hanya pada kalimat negatif"], "answer": 0,
+         "explain": "с дру́гом (bersama teman), с молоко́м (dengan susu di dalamnya). Alat tidak memakai с."},
+        {"id": "g11-05", "type": "mcq", "prompt": "Apa bentuk instrumental dari ты?", "prompt_ru": "ты",
+         "options_lang": "ru", "options": ["тобо́й", "тебе́", "тебя́", "ты"], "answer": 0,
+         "explain": "Я иду́ с тобо́й. Bentuk тебе́ datif, тебя́ akusatif atau genitif."}
+      ]
+    },
+    {
+      "id": "g12",
+      "title": "Kala lampau",
+      "stage": 5,
+      "explanation": "Kala lampau dibentuk dari bentuk dasar: buang -ть lalu tambahkan -л beserta penanda gender dan jumlah. рабо́тать menjadi он рабо́тал, она́ рабо́тала, оно́ рабо́тало, они́ рабо́тали. Hal yang paling perlu diperhatikan: kala lampau bahasa Rusia mengikuti GENDER dan JUMLAH pelakunya, bukan orangnya. Karena itu seorang lelaki mengatakan Я рабо́тал dan seorang perempuan mengatakan Я рабо́тала. Kata kerja быть pada kala lampau wajib muncul: был, была́, бы́ло, бы́ли.",
+      "caveats": [
+        "Sejumlah kata kerja kehilangan -л pada bentuk maskulin: мочь menjadi он мог (bukan могл), tetapi она́ могла́.",
+        "идти́ memakai akar yang sama sekali lain pada kala lampau: он шёл, она́ шла, они́ шли.",
+        "Bentuk jamak бы́ли dipakai untuk мы, вы, dan они́, dan juga untuk вы yang merujuk satu orang hormat: Вы бы́ли до́ма?",
+        "Aspek tetap berlaku pada kala lampau: Я чита́л (membaca, prosesnya) lawan Я прочита́л (selesai membacanya)."
+      ],
+      "examples": [
+        {"ru": "Я рабо́тал в ба́нке.", "gloss": "Saya (lelaki) dulu bekerja di bank."},
+        {"ru": "Она́ рабо́тала здесь.", "gloss": "Dia (perempuan) dulu bekerja di sini."},
+        {"ru": "Мы бы́ли до́ма.", "gloss": "Kami di rumah (kemarin)."},
+        {"ru": "Он шёл домо́й.", "gloss": "Dia sedang berjalan pulang."}
+      ],
+      "items": [
+        {"id": "g12-01", "type": "mcq", "prompt": "Seorang perempuan mengatakan 'saya dulu bekerja'. Bentuk mana yang tepat?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["Я рабо́тала.", "Я рабо́тал.", "Я рабо́тали.", "Я рабо́тало."], "answer": 0,
+         "explain": "Kala lampau mengikuti gender pelakunya. Я рабо́тал hanya untuk lelaki."},
+        {"id": "g12-02", "type": "mcq", "prompt": "Kala lampau bahasa Rusia menyesuaikan diri dengan apa?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Gender dan jumlah pelakunya, bukan orangnya",
+           "Orangnya (saya, kamu, dia) seperti pada kala kini",
+           "Jumlah saja",
+           "Tidak menyesuaikan diri dengan apa pun"], "answer": 0,
+         "explain": "Karena itu bentuk Я, Ты, dan Он sama-sama рабо́тал bila pelakunya lelaki."},
+        {"id": "g12-03", "type": "cloze", "prompt": "Lengkapi dengan bentuk быть yang tepat.", "prompt_ru": "Мы ... до́ма.",
+         "options_lang": "ru", "options": ["бы́ли", "был", "была́", "бы́ло"], "answer": 0,
+         "explain": "Pelakunya jamak, jadi бы́ли. Perhatikan letak tekanan: бы́ли tetapi была́."},
+        {"id": "g12-04", "type": "mcq", "prompt": "Apa bentuk kala lampau maskulin dari идти́?", "prompt_ru": "идти́",
+         "options_lang": "ru", "options": ["шёл", "идёл", "шла", "ходи́л"], "answer": 0,
+         "explain": "идти́ memakai akar lain: шёл, шла, шли. Bentuk ходи́л memang ada, tetapi itu kala lampau dari ходи́ть (pergi berulang)."},
+        {"id": "g12-05", "type": "mcq", "prompt": "Apa bentuk kala lampau maskulin dari мочь?", "prompt_ru": "мочь",
+         "options_lang": "ru", "options": ["мог", "могл", "мо́жел", "мо́гал"], "answer": 0,
+         "explain": "Bentuk maskulinnya kehilangan -л: мог. Tetapi она́ могла́, они́ могли́."}
+      ]
+    },
+    {
+      "id": "g13",
+      "title": "Aspek: imperfektif dan perfektif",
+      "stage": 6,
+      "explanation": "Hampir setiap kata kerja Rusia hidup berpasangan. Bentuk imperfektif memandang tindakan sebagai proses, kebiasaan, atau pengulangan: чита́ть, де́лать, покупа́ть. Bentuk perfektif memandangnya sebagai satu tindakan yang tuntas dengan hasil: прочита́ть, сде́лать, купи́ть. Akibat yang sangat penting: kata kerja perfektif TIDAK memiliki kala kini. Bentuk yang tampak seperti kala kini justru bermakna kala depan: Я прочита́ю кни́гу berarti 'saya akan membaca habis buku itu'. Kala depan imperfektif dibentuk dengan бу́ду, бу́дешь, бу́дет ditambah bentuk dasar: Я бу́ду чита́ть.",
+      "caveats": [
+        "Cara membentuk pasangan tidak seragam: kadang dengan awalan (де́лать menjadi сде́лать), kadang dengan sisipan (купи́ть menjadi покупа́ть), kadang dengan kata yang sama sekali lain (говори́ть dan сказа́ть).",
+        "Pemilihan aspek adalah pilihan MAKNA, bukan penerapan aturan mekanis. Dua kalimat bisa sama-sama benar dengan nuansa berbeda, dan hanya pembiasaan panjang yang mengasahnya.",
+        "Awalan tidak hanya mengubah aspek; sering ia mengubah arti pula: писа́ть (menulis) menjadi написа́ть (menulis sampai selesai) tetapi juga переписа́ть (menulis ulang), подписа́ть (menandatangani).",
+        "Kata kerja gerak memiliki lapisan tambahan: идти́ dan ходи́ть sama-sama imperfektif, tetapi yang pertama satu arah dan yang kedua berulang."
+      ],
+      "examples": [
+        {"ru": "Я чита́ю кни́гу.", "gloss": "Saya sedang membaca buku."},
+        {"ru": "Я прочита́л кни́гу.", "gloss": "Saya sudah membaca habis buku itu."},
+        {"ru": "Я бу́ду чита́ть.", "gloss": "Saya akan membaca."},
+        {"ru": "Я прочита́ю кни́гу.", "gloss": "Saya akan membaca habis buku itu."}
+      ],
+      "items": [
+        {"id": "g13-01", "type": "mcq", "prompt": "Apa beda Я чита́л кни́гу dan Я прочита́л кни́гу?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Yang kedua menegaskan bukunya habis dibaca",
+           "Yang kedua kala depan",
+           "Yang pertama lebih sopan",
+           "Tidak ada bedanya"], "answer": 0,
+         "explain": "чита́л memandang prosesnya, прочита́л memandang hasilnya. Inilah inti perbedaan aspek."},
+        {"id": "g13-02", "type": "mcq", "prompt": "Bagaimana kala depan dari чита́ть (imperfektif)?", "prompt_ru": null,
+         "options_lang": "ru", "options": ["Я бу́ду чита́ть.", "Я чита́ю.", "Я прочита́л.", "Я чита́л бу́ду."], "answer": 0,
+         "explain": "Kala depan imperfektif memakai бу́ду + bentuk dasar. Susunan Я чита́л бу́ду tidak ada dalam bahasa Rusia."},
+        {"id": "g13-03", "type": "mcq", "prompt": "Bentuk 'kala kini' kata kerja perfektif sebenarnya bermakna apa?", "prompt_ru": null,
+         "options_lang": "id", "options": ["Kala depan", "Kala kini", "Kala lampau", "Kalimat perintah"], "answer": 0,
+         "explain": "Perfektif tidak punya kala kini, karena tindakan yang tuntas tidak bisa sedang berlangsung. Я напишу́ = saya akan menulis (sampai selesai)."},
+        {"id": "g13-04", "type": "mcq", "prompt": "Apa pasangan perfektif dari де́лать?", "prompt_ru": "де́лать",
+         "options_lang": "ru", "options": ["сде́лать", "де́лаю", "де́лал", "де́лали"], "answer": 0,
+         "explain": "Hanya ditambah awalan с-. Bentuk де́лаю kala kini, де́лал dan де́лали kala lampau imperfektif."},
+        {"id": "g13-05", "type": "mcq", "prompt": "Apa pasangan imperfektif dari купи́ть?", "prompt_ru": "купи́ть",
+         "options_lang": "ru", "options": ["покупа́ть", "купля́ть", "купи́л", "купова́ть"], "answer": 0,
+         "explain": "Pasangannya dibentuk dengan sisipan: покупа́ть. Bentuk купля́ть dan купова́ть tidak ada."}
+      ]
+    },
+    {
+      "id": "g14",
+      "title": "Kata sifat dan adverbia",
+      "stage": 6,
+      "explanation": "Kata sifat menyesuaikan diri dengan gender, jumlah, dan kasus kata bendanya. Pada nominatif, akhirannya -ый, -ий, atau -ой untuk maskulin; -ая atau -яя untuk feminin; -ое atau -ее untuk netral; -ые atau -ие untuk jamak: но́вый дом, но́вая кни́га, но́вое окно́, но́вые дома́. Adverbia dibentuk dengan -о dan tidak pernah berubah: хоро́ший menjadi хорошо́, бы́стрый menjadi бы́стро. Kata sifat menerangkan kata benda, adverbia menerangkan kata kerja.",
+      "caveats": [
+        "Pilihan -ый atau -ой bergantung letak tekanan: но́вый (tekanan di akar) tetapi большо́й (tekanan di akhiran).",
+        "Sesudah г, к, х, ж, ш, щ, ч dipakai -ий dan -ие karena ejaan Rusia tidak menulis ы sesudah huruf itu: ру́сский, ру́сские.",
+        "Bentuk netral kata sifat dipakai sebagai predikat pada kalimat tanpa subjek: Э́то ва́жно (ini penting), Мне хо́лодно (saya kedinginan), Здесь хорошо́ (di sini enak).",
+        "Ada juga bentuk pendek kata sifat (за́нят, свобо́ден, бо́лен) yang dipakai sebagai predikat dan tidak bisa diletakkan di depan kata benda."
+      ],
+      "examples": [
+        {"ru": "Э́то но́вый дом.", "gloss": "Ini rumah baru."},
+        {"ru": "Э́то но́вая кни́га.", "gloss": "Ini buku baru."},
+        {"ru": "Э́то но́вое окно́.", "gloss": "Ini jendela baru."},
+        {"ru": "Он хорошо́ говори́т.", "gloss": "Dia berbicara dengan baik."}
+      ],
+      "items": [
+        {"id": "g14-01", "type": "cloze", "prompt": "Lengkapi dengan bentuk но́вый yang tepat.", "prompt_ru": "... кни́га",
+         "options_lang": "ru", "options": ["но́вая", "но́вый", "но́вое", "но́вые"], "answer": 0,
+         "explain": "кни́га feminin, jadi но́вая."},
+        {"id": "g14-02", "type": "cloze", "prompt": "Lengkapi dengan bentuk большо́й yang tepat.", "prompt_ru": "... окно́",
+         "options_lang": "ru", "options": ["большо́е", "больша́я", "большо́й", "больши́е"], "answer": 0,
+         "explain": "окно́ netral, jadi большо́е окно́."},
+        {"id": "g14-03", "type": "mcq", "prompt": "Apa bentuk adverbia dari хоро́ший?", "prompt_ru": "хоро́ший",
+         "options_lang": "ru", "options": ["хорошо́", "хоро́шая", "хоро́шее", "хоро́ший"], "answer": 0,
+         "explain": "Adverbia memakai -о, dan di sini tekanannya berpindah ke akhir: хорошо́."},
+        {"id": "g14-04", "type": "mcq", "prompt": "Apa beda Он хоро́ший dan Он хорошо́ говори́т?", "prompt_ru": null,
+         "options_lang": "id", "options": [
+           "Yang pertama kata sifat untuk orangnya, yang kedua adverbia untuk cara berbicaranya",
+           "Keduanya sama",
+           "Yang kedua salah secara tata bahasa",
+           "Yang pertama kala lampau"], "answer": 0,
+         "explain": "Kata sifat menerangkan kata benda (orang yang baik), adverbia menerangkan kata kerja (berbicara dengan baik)."},
+        {"id": "g14-05", "type": "mcq", "prompt": "Mengapa ру́сский memakai -ий, bukan -ый?", "prompt_ru": "ру́сский",
+         "options_lang": "id", "options": [
+           "Karena ejaan Rusia tidak menulis ы sesudah к",
+           "Karena kata itu nama kebangsaan",
+           "Karena tekanannya di suku pertama",
+           "Karena bentuk jamaknya ру́сские"], "answer": 0,
+         "explain": "Kaidah ejaan yang sama berlaku sesudah г, х, ж, ш, щ, ч: ма́ленький, дороги́е."}
+      ]
+    }
+  ]
+}

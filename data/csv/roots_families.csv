@@ -1,0 +1,62 @@
+family_id,root,variants,root_meaning,stage,ru,translit,lafal,gloss,pattern,family_note
+r01,работ,рабоч,kerja,2,рабо́та,rabóta,ra-BO-ta,"pekerjaan, tempat kerja",-а,"Akarnya hampir tidak berubah. Satu kekecualian: pada рабо́чий huruf т menjadi ч, sehingga akarnya рабоч-."
+r01,работ,рабоч,kerja,2,рабо́тать,rabótat',ra-BO-tat',bekerja,-ать,"Akarnya hampir tidak berubah. Satu kekecualian: pada рабо́чий huruf т menjadi ч, sehingga akarnya рабоч-."
+r01,работ,рабоч,kerja,2,рабо́чий,rabóchiy,ra-BO-chiy,"buruh, pekerja",-ий,"Akarnya hampir tidak berubah. Satu kekecualian: pada рабо́чий huruf т menjadi ч, sehingga akarnya рабоч-."
+r01,работ,рабоч,kerja,2,рабо́тник,rabótnik,ra-BO-tnik,"pegawai, karyawan",-ник,"Akarnya hampir tidak berubah. Satu kekecualian: pada рабо́чий huruf т menjadi ч, sehingga akarnya рабоч-."
+r02,говор,говар,bicara,3,говори́ть,govorít',ga-va-RIT',berbicara,-ить,Pada разгова́ривать huruf о kedua berubah menjadi а. Perubahan vokal akar semacam ini lazim pada bentuk berulang.
+r02,говор,говар,bicara,3,разгово́р,razgovór,ra-zga-VOR,percakapan,раз- + -0,Pada разгова́ривать huruf о kedua berubah menjadi а. Perubahan vokal akar semacam ini lazim pada bentuk berulang.
+r02,говор,говар,bicara,3,разгова́ривать,razgovárivat',ra-zga-VA-ri-vat',bercakap-cakap,раз- + -ивать,Pada разгова́ривать huruf о kedua berubah menjadi а. Perubahan vokal akar semacam ini lazim pada bentuk berulang.
+r02,говор,говар,bicara,3,догово́р,dogovór,da-ga-VOR,"perjanjian, kontrak",до- + -0,Pada разгова́ривать huruf о kedua berubah menjadi а. Perubahan vokal akar semacam ini lazim pada bentuk berulang.
+r03,пис,пиш,tulis,3,писа́ть,pisát',pi-SAT',menulis,-ать,"Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+r03,пис,пиш,tulis,3,письмо́,pis'mó,pis'-MO,surat,-мо,"Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+r03,пис,пиш,tulis,3,писа́тель,pisátel',pi-SA-til',"penulis, sastrawan",-тель,"Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+r03,пис,пиш,tulis,3,запи́ска,zapíska,za-PI-ska,"catatan kecil, memo",за- + -ка,"Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+r03,пис,пиш,tulis,3,по́дпись,pódpis',PO-tpis',tanda tangan,под- + -ь,"Huruf с menjadi ш pada konjugasi: я пишу́, ты пи́шешь. Inilah sebabnya писа́ть dan пишу́ terasa seperti dua kata berbeda."
+r04,чит,чт,baca,3,чита́ть,chitát',chi-TAT',membaca,-ать,"Pada чте́ние vokal и hilang sama sekali, sehingga akarnya tinggal чт-. Pola hilangnya vokal ini disebut vokal yang gugur."
+r04,чит,чт,baca,3,чита́тель,chitátel',chi-TA-til',pembaca,-тель,"Pada чте́ние vokal и hilang sama sekali, sehingga akarnya tinggal чт-. Pola hilangnya vokal ini disebut vokal yang gugur."
+r04,чит,чт,baca,3,прочита́ть,prochitát',pra-chi-TAT',membaca habis,про- + -ать,"Pada чте́ние vokal и hilang sama sekali, sehingga akarnya tinggal чт-. Pola hilangnya vokal ini disebut vokal yang gugur."
+r04,чит,чт,baca,3,чте́ние,chténiye,CHTYE-ni-i,"bacaan, kegiatan membaca",-ение,"Pada чте́ние vokal и hilang sama sekali, sehingga akarnya tinggal чт-. Pola hilangnya vokal ini disebut vokal yang gugur."
+r05,уч,,"ajar, belajar",2,учи́ть,uchít',u-CHIT',"mengajar, menghafal",-ить,"Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+r05,уч,,"ajar, belajar",2,учи́ться,uchít'sya,u-CHI-tsa,"belajar, bersekolah",-иться,"Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+r05,уч,,"ajar, belajar",2,учи́тель,uchítel',u-CHI-til',guru,-тель,"Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+r05,уч,,"ajar, belajar",2,учени́к,ucheník,u-chi-NIK,"murid, pelajar",-еник,"Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+r05,уч,,"ajar, belajar",2,уче́бник,uchébnik,u-CHE-bnik,buku pelajaran,-ебник,"Satu akar pendek menurunkan pengajar, pelajar, kegiatan, dan bukunya sekaligus. Perhatikan bahwa учи́ть bisa berarti mengajar maupun menghafal."
+r06,ход,хож,"jalan, gerak",4,ходи́ть,khodít',kha-DIT',pergi berulang (jalan kaki),-ить,Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́.
+r06,ход,хож,"jalan, gerak",4,вход,vkhod,fkhot,pintu masuk,в- + -0,Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́.
+r06,ход,хож,"jalan, gerak",4,вы́ход,výkhod,VY-khat,pintu keluar,вы- + -0,Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́.
+r06,ход,хож,"jalan, gerak",4,перехо́д,perekhód,pi-ri-KHOT,"penyeberangan, peralihan",пере- + -0,Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́.
+r06,ход,хож,"jalan, gerak",4,прохо́жий,prokhózhiy,pra-KHO-zhyy,orang yang lewat,про- + -ий,Keluarga paling berguna di jalan: papan ВХОД dan ВЫХОД ada di setiap stasiun metro. Huruf д menjadi ж pada bentuk saya: я хожу́.
+r07,дом,,rumah,2,дом,dom,dom,"rumah, gedung",-0,"Tiga bentuk yang mirip tetapi berbeda fungsi: дома́ (jamak, rumah-rumah), до́ма (di rumah), домо́й (ke rumah). Hanya tekanan dan akhiran yang membedakannya."
+r07,дом,,rumah,2,до́ма,dóma,DO-ma,di rumah,-а (adverbia),"Tiga bentuk yang mirip tetapi berbeda fungsi: дома́ (jamak, rumah-rumah), до́ма (di rumah), домо́й (ke rumah). Hanya tekanan dan akhiran yang membedakannya."
+r07,дом,,rumah,2,домо́й,domóy,da-MOY,"pulang, ke rumah",-ой (adverbia),"Tiga bentuk yang mirip tetapi berbeda fungsi: дома́ (jamak, rumah-rumah), до́ма (di rumah), домо́й (ke rumah). Hanya tekanan dan akhiran yang membedakannya."
+r07,дом,,rumah,2,дома́шний,domáshniy,da-MA-shniy,"rumahan, buatan rumah",-ашний,"Tiga bentuk yang mirip tetapi berbeda fungsi: дома́ (jamak, rumah-rumah), до́ма (di rumah), домо́й (ke rumah). Hanya tekanan dan akhiran yang membedakannya."
+r08,друг,друж; друз,teman,3,друг,drug,druk,teman (lelaki),-0,"Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+r08,друг,друж; друз,teman,3,подру́га,podrúga,pa-DRU-ga,teman (perempuan),по- + -а,"Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+r08,друг,друж; друз,teman,3,дру́жба,drúzhba,DRU-zhba,persahabatan,-ба,"Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+r08,друг,друж; друз,teman,3,дружи́ть,druzhít',dru-ZHYT',berteman,-ить,"Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+r08,друг,друж; друз,teman,3,друзья́,druz'yá,dru-ZYA,teman-teman,-ья (jamak),"Akar ini berubah tiga kali: друг, друж, друз. Pergantian г-ж-з semacam ini adalah sisa kaidah bunyi Slavia kuno."
+r09,зна,,tahu,4,знать,znat',znat',"tahu, mengetahui",-ть,Dari akar sependek ini lahir pula ungkapan perkenalan: Прия́тно познако́миться (senang berkenalan).
+r09,зна,,tahu,4,зна́ние,znániye,ZNA-ni-i,pengetahuan,-ние,Dari akar sependek ini lahir pula ungkapan perkenalan: Прия́тно познако́миться (senang berkenalan).
+r09,зна,,tahu,4,знако́мый,znakómyy,zna-KO-myy,"kenalan, yang dikenal",-комый,Dari akar sependek ini lahir pula ungkapan perkenalan: Прия́тно познако́миться (senang berkenalan).
+r09,зна,,tahu,4,знако́мство,znakómstvo,zna-KO-mstva,perkenalan,-комство,Dari akar sependek ini lahir pula ungkapan perkenalan: Прия́тно познако́миться (senang berkenalan).
+r10,жи,жиз,hidup,4,жить,zhit',zhyt',"hidup, tinggal",-ть,"Sesudah ж, huruf и dilafalkan seperti ы: жить dibaca 'zhyt', жизнь dibaca 'zhyzn'."
+r10,жи,жиз,hidup,4,жизнь,zhizn',zhyzn',kehidupan,-знь,"Sesudah ж, huruf и dilafalkan seperti ы: жить dibaca 'zhyt', жизнь dibaca 'zhyzn'."
+r10,жи,жиз,hidup,4,жи́тель,zhítel',ZHY-til',"penduduk, penghuni",-тель,"Sesudah ж, huruf и dilafalkan seperti ы: жить dibaca 'zhyt', жизнь dibaca 'zhyzn'."
+r10,жи,жиз,hidup,4,жило́й,zhilóy,zhy-LOY,"hunian, tempat tinggal",-ой,"Sesudah ж, huruf и dilafalkan seperti ы: жить dibaca 'zhyt', жизнь dibaca 'zhyzn'."
+r11,вид,виж,lihat,5,ви́деть,vídet',VI-dit',melihat,-еть,"Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+r11,вид,виж,lihat,5,вид,vid,vit,"pemandangan, jenis",-0,"Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+r11,вид,виж,lihat,5,ви́дно,vídno,VI-dna,"kelihatan, tampaknya",-но,"Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+r11,вид,виж,lihat,5,уви́деть,uvídet',u-VI-dit',"melihat (sekali, tuntas)",у- + -еть,"Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+r11,вид,виж,lihat,5,свида́ние,svidániye,svi-DA-ni-i,"pertemuan, kencan",с- + -ание,"Salam До свида́ния berarti 'sampai pertemuan', dan akarnya sama dengan ви́деть. Huruf д menjadi ж pada bentuk saya: я ви́жу."
+r12,люб,любл,"cinta, suka",5,люби́ть,lyubít',lyu-BIT',"mencintai, menyukai",-ить,"Bentuk я menyisipkan л: люблю́. Sisipan itu muncul pada semua kata kerja yang akarnya berakhiran б, в, м, п, atau ф."
+r12,люб,любл,"cinta, suka",5,любо́вь,lyubóv',lyu-BOF',cinta,-овь,"Bentuk я menyisipkan л: люблю́. Sisipan itu muncul pada semua kata kerja yang akarnya berakhiran б, в, м, п, atau ф."
+r12,люб,любл,"cinta, suka",5,люби́мый,lyubímyy,lyu-BI-myy,"tercinta, favorit",-имый,"Bentuk я menyisipkan л: люблю́. Sisipan itu muncul pada semua kata kerja yang akarnya berakhiran б, в, м, п, atau ф."
+r12,люб,любл,"cinta, suka",5,люби́тель,lyubítel',lyu-BI-til',"penggemar, amatir",-тель,"Bentuk я menyisipkan л: люблю́. Sisipan itu muncul pada semua kata kerja yang akarnya berakhiran б, в, м, п, atau ф."
+r13,стро,,bangun,6,стро́ить,stróit',STRO-it',membangun,-ить,Perhatikan perpindahan tekanan: стро́ить tetapi строи́тель.
+r13,стро,,bangun,6,стро́йка,stróyka,STROY-ka,proyek bangunan,-йка,Perhatikan perpindahan tekanan: стро́ить tetapi строи́тель.
+r13,стро,,bangun,6,строи́тель,stroítel',stra-I-til',tukang bangunan,-тель,Perhatikan perpindahan tekanan: стро́ить tetapi строи́тель.
+r13,стро,,bangun,6,постро́ить,postróit',pa-STRO-it',membangun (sampai selesai),по- + -ить,Perhatikan perpindahan tekanan: стро́ить tetapi строи́тель.
+r14,врем,времен,waktu,6,вре́мя,vrémya,VRYE-mya,waktu,-я,"Akarnya memanjang menjadi времен- pada hampir semua bentuk selain nominatif: вре́мени, времена́."
+r14,врем,времен,waktu,6,вре́менный,vrémennyy,VRYE-mi-nnyy,sementara,-енный,"Akarnya memanjang menjadi времен- pada hampir semua bentuk selain nominatif: вре́мени, времена́."
+r14,врем,времен,waktu,6,вре́менно,vrémenno,VRYE-mi-nna,untuk sementara,-енно,"Akarnya memanjang menjadi времен- pada hampir semua bentuk selain nominatif: вре́мени, времена́."
+r14,врем,времен,waktu,6,совреме́нный,sovreménnyy,sa-vri-MYE-nnyy,"modern, masa kini",со- + -енный,"Akarnya memanjang menjadi времен- pada hampir semua bentuk selain nominatif: вре́мени, времена́."
