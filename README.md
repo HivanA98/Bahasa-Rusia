@@ -19,7 +19,7 @@ sebenarnya. Sasarannya tingkat A1 menuju A2.
 | Teman palsu dan serapan | 18 kata, 4 catatan, 10 soal |
 | Total kartu | 393 |
 | Lembar kerja tertulis | 12 lembar + 12 kunci jawaban |
-| Pengujian otomatis | 232 |
+| Pengujian otomatis | 235 |
 
 ## Dua cara memakai
 
@@ -377,12 +377,12 @@ sekaligus.
 python -m pytest
 ```
 
-232 pengujian. Yang diperiksa:
+235 pengujian. Yang diperiksa:
 
 | Berkas | Isi |
 |:-------|:----|
 | `test_schema.py` | Id unik di seluruh modul, format id, tidak ada field kosong, nilai kelas kata dan gender sah, kata benda bergender, kata kerja memiliki aspek dan konjugasi, kata sifat memiliki bentuk f/n/pl, alfabet berisi tepat 33 huruf dan 10 vokal, setiap tahap dan setiap level terisi, pasangan aspek saling menunjuk. |
-| `test_cyrillic.py` | Hanya karakter Kiril yang diizinkan, bentuk NFC, aturan tanda tekanan (bersuku banyak wajib satu tanda, bersuku satu tanpa tanda, kata ber-ё tanpa tanda), akar tanpa tanda tekanan, kasus pelafalan yang dipatok, contoh kalimat diakhiri tanda baca. |
+| `test_cyrillic.py` | Hanya karakter Kiril yang diizinkan, bentuk NFC, aturan tanda tekanan (bersuku banyak wajib satu tanda, bersuku satu tanpa tanda, kata ber-ё tanpa tanda), akar tanpa tanda tekanan, kasus pelafalan yang dipatok, contoh kalimat diakhiri tanda baca. Tiga pengujian terakhir menyapu SELURUH teks di `data/`, termasuk field prosa: tidak ada kata yang bercampur aksara Latin dan Kiril (`menjadи`, `Idти́`), tidak ada huruf Latin beraksen (alih huruf yang menyelinap ke data), dan semuanya dalam bentuk NFC. |
 | `test_translit.py` | Kasus alih huruf yang dipatok, е beriota di awal kata dan sesudah konsonan, tidak ada huruf Kiril yang tertinggal, alih huruf nama huruf sejalan dengan data. |
 | `test_roots.py` | Huruf akar muncul berurutan pada kata turunannya, varian akar terbukti dipakai atau dijelaskan, keluarga bervarian wajib bercatatan, satu kata tidak diklaim dua keluarga, akar di `vocab.json` sejalan dengan `roots.json`. |
 | `test_keys.py` | Setiap soal memiliki tepat satu jawaban benar, tidak ada pilihan ganda identik, semua pilihan soal tekanan berhuruf sama, kunci sama dengan kata pada kalimatnya, pengecoh kosakata tidak ikut benar, pengecoh soal buatan otomatis benar-benar asing, jawaban tidak bocor di sisi soal. |

@@ -8,6 +8,9 @@ tanda tekanan. Lihat data/NEEDS_REVIEW.md.
 
 from __future__ import annotations
 
+import re
+import unicodedata
+
 import pytest
 
 from rusdrill import dataio
@@ -209,3 +212,84 @@ def test_contoh_kalimat_diakhiri_tanda_baca():
         if e["example"]["ru"].strip()[-1] not in ".!?"
     ]
     assert not kurang, "contoh kalimat tanpa tanda akhir: %s" % kurang
+
+
+# ------------------------------------------------- data: seluruh teks ---
+# Tiga pengujian berikut menyapu SEMUA teks di dalam data/, termasuk field
+# prosa (note, explain, explanation, caveats) yang tidak dijangkau validator
+# tanda tekanan. Ketiganya menangkap kesalahan yang mudah lolos dari mata
+# manusia karena bentuk hurufnya nyaris sama.
+
+#: Tanda hubung dan tanda baca menjadi pemisah kata, karena prosa Indonesia
+#: memang menyambung awalan Latin dengan kata Kiril: "kata ber-на".
+_KATA = re.compile(r"[\ẃ']+", re.UNICODE)
+_KIRIL = re.compile(r"[Ѐ-ӿ]")
+_LATIN = re.compile(r"[A-Za-z]")
+
+
+def _semua_teks():
+    """Setiap teks di seluruh berkas data, beserta tempatnya."""
+
+    def jelajah(obj, where):
+        if isinstance(obj, dict):
+            for k, v in obj.items():
+                yield from jelajah(v, "%s.%s" % (where, k))
+        elif isinstance(obj, list):
+            for i, v in enumerate(obj):
+                yield from jelajah(v, "%s[%d]" % (where, i))
+        elif isinstance(obj, str):
+            yield where, obj
+
+    for name in dataio.MODULE_FILES:
+        yield from jelajah(dataio.load(name), name)
+
+
+def test_tidak_ada_kata_bercampur_aksara_latin_dan_kiril():
+    """Satu kata tidak boleh memuat huruf Latin dan Kiril sekaligus.
+
+    Huruf seperti а, е, о, р, с, у, х, М, Н, Т hampir tidak terbedakan dari
+    pasangan Latinnya di layar, sehingga salah taip semacam `menjadи` atau
+    `Idти́` bisa bertahan lama tanpa terlihat. Mesin membedakannya dengan
+    pasti, dan itulah gunanya pengujian ini.
+    """
+    salah = []
+    for where, teks in _semua_teks():
+        for kata in _KATA.findall(teks):
+            if _KIRIL.search(kata) and _LATIN.search(kata):
+                salah.append("%s: %r" % (where, kata))
+    assert not salah, (
+        "kata bercampur aksara Latin dan Kiril:\n  " + "\n  ".join(salah)
+    )
+
+
+def test_tidak_ada_huruf_latin_beraksen_di_data():
+    """Alih huruf Latin tidak boleh masuk ke data.
+
+    Data hanya memuat Bahasa Indonesia dan tulisan Kiril. Huruf Latin
+    beraksen (á, ó, é) adalah tanda bahwa alih huruf seperti `Krásnaya
+    plóshchad` menyelinap masuk, padahal tempatnya di keluaran program, bukan
+    di sumber datanya.
+    """
+    salah = []
+    for where, teks in _semua_teks():
+        for ch in teks:
+            if ord(ch) > 127 and unicodedata.name(ch, "").startswith("LATIN"):
+                salah.append("%s: %r pada %r" % (where, ch, teks[:60]))
+    assert not salah, (
+        "huruf Latin beraksen di dalam data:\n  " + "\n  ".join(salah)
+    )
+
+
+def test_seluruh_teks_data_dalam_bentuk_nfc():
+    """Termasuk field prosa, bukan hanya field Kiril.
+
+    Teks NFD terlihat sama persis di layar tetapi berbeda isinya, sehingga
+    pencarian dan penyuntingan pada teks itu bisa gagal tanpa alasan yang
+    kelihatan.
+    """
+    salah = [
+        "%s: %r" % (where, teks[:60])
+        for where, teks in _semua_teks()
+        if not unicodedata.is_normalized("NFC", teks)
+    ]
+    assert not salah, "teks tidak dalam bentuk NFC:\n  " + "\n  ".join(salah)
